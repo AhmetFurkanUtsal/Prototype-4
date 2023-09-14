@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,5 +19,6 @@ public class PlayerController : MonoBehaviour
     {
         float ForwardInput = Input.GetAxis("Vertical");
         rb.AddForce(focalPoint.transform.forward * speed * ForwardInput);
+        // Vektor3 e göre değil odak noktamızın gösterdiği yöne doğru
     }
 }
